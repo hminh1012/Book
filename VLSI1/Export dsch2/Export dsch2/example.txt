@@ -1,0 +1,18 @@
+// DSCH 2.7f
+// 8/7/2012 1:39:26 AM
+// example
+
+module example( clk1,clk2,out1);
+ input clk1,clk2;
+ output out1;
+ and #(16) and(out1,clk2,clk1);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#500 clk1=~clk1;
+#2000 clk2=~clk2;
+
+// Simulation parameters
+// clk1 CLK 5.000 5.000
+// clk2 CLK 20.00 20.00

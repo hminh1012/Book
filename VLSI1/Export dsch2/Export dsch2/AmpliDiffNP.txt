@@ -1,0 +1,47 @@
+// DSCH 2.7f
+// 1/23/2008 2:34:41 PM
+// C:\vlsi-march07\Export dsch2\AmpliDiffNP.sch
+
+module AmpliDiffNP( );
+ nmos #(10) nmos(w5,w4,vdd); // 1.0u 0.12u
+ pmos #(17) PO(w6,vdd,w7); // 2.0u 0.12u
+ nmos #(38) Nb(w7,vss,w7); // 1.0u 1u
+ nmos #(24) N1(w8,vss,w8); // 1.0u 1u
+ pmos #(24) P1(w11,w9,w10); // 2.0u 0.12u
+ nmos #(24) N1(w11,vss,w11); // 1.0u 1u
+ pmos #(38) Pb(w7,vdd,w7); // 2.0u 0.12u
+ nmos #(10) N2(w12,vss,w8); // 1.0u 1u
+ nmos #(10) N2(w13,vss,w11); // 1.0u 1u
+ pmos #(10) P2(w12,w14,w4); // 2.0u 0.12u
+ pmos #(17) Pb(w9,vdd,w15); // 2.0u 0.12u
+ pmos #(10) P2(w13,w9,w16); // 2.0u 0.12u
+ pmos #(17) Pb(w18,vdd,w17); // 2.0u 0.12u
+ pmos #(24) P1(w21,w19,w20); // 2.0u 0.12u
+ pmos #(17) Pb(w19,vdd,w22); // 2.0u 0.12u
+ pmos #(24) P2(w24,w19,w23); // 2.0u 0.12u
+ nmos #(24) N2(w24,vss,w21); // 1.0u 1u
+ nmos #(24) N1(w21,vss,w21); // 1.0u 1u
+ pmos #(24) P3(w25,vdd,w25); // 2.0u 0.12u
+ pmos #(24) P4(w24,vdd,w25); // 2.0u 0.12u
+ nmos #(24) N3(w25,w26,w20); // 1.0u 1u
+ nmos #(24) N4(w24,w26,w23); // 1.0u 1u
+ nmos #(17) nmos(w26,vss,w27); // 1.0u 1u
+ pmos #(24) P1(w8,w14,w28); // 2.0u 0.12u
+ nmos #(17) nmos(w29,vss,w17); // 1.0u 1u
+ nmos #(24) N4(w31,w29,w30); // 1.0u 1u
+ nmos #(24) N3(w33,w29,w32); // 1.0u 1u
+ pmos #(24) P4(w31,vdd,w33); // 2.0u 0.12u
+ pmos #(24) P3(w33,vdd,w33); // 2.0u 0.12u
+ nmos #(38) Nb(w17,vss,w17); // 1.0u 1u
+ nmos #(24) N1(w34,vss,w34); // 1.0u 1u
+ pmos #(38) Pb(w17,vdd,w17); // 2.0u 0.12u
+ nmos #(24) N2(w31,vss,w34); // 1.0u 1u
+ pmos #(24) P2(w31,w18,w30); // 2.0u 0.12u
+ pmos #(24) P1(w34,w18,w32); // 2.0u 0.12u
+ pmos #(17) Pb(w14,vdd,w7); // 2.0u 0.12u
+ nmos #(17) NO(w6,vss,w4); // 1.0u 1u
+endmodule
+
+// Simulation parameters in Verilog Format
+
+// Simulation parameters

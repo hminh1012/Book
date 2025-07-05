@@ -1,0 +1,14 @@
+// DSCH 2.7f
+// 3/23/2007 1:16:12 AM
+// E:\vlsi-march07\Export dsch2\AdcFlash2bits.sch
+
+module AdcFlash2bits( A1,A0);
+ output A1,A0;
+ not #(10) inv(w8,A1);
+ or #(16) or(A0,w7,w9);
+ and #(16) and(w9,w4,w8);
+endmodule
+
+// Simulation parameters in Verilog Format
+
+// Simulation parameters

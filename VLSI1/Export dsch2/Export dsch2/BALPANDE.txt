@@ -1,0 +1,20 @@
+// DSCH 2.7f
+// 1/23/2008 2:29:59 PM
+// C:\vlsi-march07\Export dsch2\BALPANDE.sch
+
+module BALPANDE( in2,in1,in3,out1);
+ input in2,in1,in3;
+ output out1;
+ lut #(16) LookUpTable(out1,in1,in2,in3,00000001);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 in2=~in2;
+#2000 in1=~in1;
+#4000 in3=~in3;
+
+// Simulation parameters
+// in2 CLK 10 10
+// in1 CLK 20 20
+// in3 CLK 40 40
